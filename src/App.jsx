@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router'
 import './App.css'
 import Home from './pages/Home'
+import Sobre_Mim from './pages/Sobre_Mim'
 import { useEffect, useState } from 'react'
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
         
 
         <Route path='/' element={<Home />}/>
+        <Route path='/Sobre_Mim' element={<Sobre_Mim />} />
 
       </Routes>
     </>
