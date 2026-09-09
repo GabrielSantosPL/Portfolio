@@ -1,14 +1,13 @@
 /* --- CONTAINER PRINCIPAL DA JANELA --- */
 .image-window-container {
-  /* Mantém a mesma altura do card para alinhar perfeitamente lado a lado,
-     mas deixamos um pouco mais larga (400px) para acomodar melhor imagens */
   width: 360px;
   height: 360px; 
   background-color: var(--alt-color);
   border: 3px solid var(--main-color);
-  box-shadow: 3px 3px 10px var(--main-color);
+  box-shadow: 8px 8px 0px var(--main-color);
   display: flex;
   flex-direction: column;
+  box-sizing: border-box; /* Garante que padding e bordas não estourem o tamanho */
 }
 
 .window-controls {
@@ -38,20 +37,23 @@
 
 /* --- ÁREA INTERNA DA IMAGEM --- */
 .image-content {
-  flex: 1;
+  flex: 1; /* Ocupa todo o espaço restante abaixo do cabeçalho */
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px; /* Borda branca interna ao redor da imagem */
-  background: var(--alt-color);
+  padding: 16px; 
+  background-color: var(--alt-color);
+  overflow: hidden; /* Evita que qualquer imagem grande vaze para fora da janela */
 }
 
 /* --- A IMAGEM EM SI --- */
 .portfolio-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Faz a imagem preencher o espaço mantendo a proporção */
-  border: 2px solid var(--main-color); /* Uma bordinha preta extra ao redor da foto para reforçar o contraste */
+  object-fit: contain; /* ALTERADO DE 'cover' PARA 'contain' */
+  object-position: center;
+  border: 2px solid var(--main-color);
+  background-color: var(--alt-color); /* Fundo branco caso a imagem tenha transparência */
 }
 
 /* --- ANIMAÇÃO DE TRANSIÇÃO --- */

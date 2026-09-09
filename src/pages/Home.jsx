@@ -15,15 +15,15 @@ export default function Home(){
             title: "Sobre Mim",
             text: `Me chamo Gabriel Santos Patrício e tenho ${idade} anos de idade.
             Atualmente estou cursando Desenvolvimento de Software Multiplataforma na Faculdade de Tecnologia de Indaiatuba.`,
-            link: "/Sobre_Mim",
-            linkText: `Acessar página "Sobre Mim"`
+            links: [{url:"/Sobre_Mim",
+            text: `Acessar página "Sobre Mim"`}]
         },
         {
             id: 3,
             title: "Formação acadêmica",
             text: "Para além do curso de Desenvolvimento de Software que presto na Fatec, tenho também cursos complementares que ocasionalmente participo, caso esteja interessado(a) acesse o link abaixo: ",
-            link: "/Form_Acad",
-            linkText: "Cursos e Certificados"
+            links: [{url: "/Form_Acad",
+            text: "Cursos e Certificados"}]
         }
     ]
 
