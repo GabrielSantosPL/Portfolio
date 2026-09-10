@@ -30,7 +30,7 @@ export default function Home(){
             id: 4,
             title: "Reflexões de aulas",
             text: "Uma seção dedicada para escrever minhas reflexões sobre o conteúdo e o andamentos das aulas",
-            links: [{url: "/Refl/Gap", text: "Gestão Ágil de projetos"}, {url: "/Refl/IHC", text: "Interação Humano-Computador"}, {url: "/Refl/TP2", text: "Técnicas de programação II"}]
+            links: [{url: "/Refl/GAP", text: "Gestão Ágil de projetos"}, {url: "/Refl/IHC", text: "Interação Humano-Computador"}, {url: "/Refl/TP2", text: "Técnicas de programação II"}]
 
         }
     ]

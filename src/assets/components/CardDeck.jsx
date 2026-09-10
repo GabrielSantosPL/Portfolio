@@ -75,6 +75,7 @@ const CardDeck = ({ cardsData, activeIndex, setActiveIndex}) => {
                       key={idx}
                       href={linkItem.url} 
                       className="card-link"
+                      target={linkItem.target?"_blank":""}
                       rel="noopener noreferrer"
                     >
                       {linkItem.text}
