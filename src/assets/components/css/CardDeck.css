@@ -3,8 +3,7 @@
   position: relative;
   width: 640px; /* Largura da janela */
   height: 360px; /* Altura da janela */
-  margin: 60px 0; /* Centraliza na tela temporariamente */
-  margin-right: 100px;
+  margin: 60px auto; /* Centraliza na tela temporariamente */
 }
 
 /* O Card Principal - Janela do Windows */
