@@ -1,10 +1,18 @@
 import React from 'react';
 import "./css/CardDeck.css"
 
-const CardDeck = ({ cardsData, activeIndex, handleNext, handlePrev }) => {
+const CardDeck = ({ cardsData, activeIndex, setActiveIndex}) => {
   if (!cardsData || cardsData.length === 0) {
     return <div className="empty-deck">Nenhuma janela aberta.</div>;
   }
+
+  const handleNext = () => {
+    if (activeIndex < cardsData.length - 1) setActiveIndex((prev) => prev + 1);
+  };
+
+  const handlePrev = () => {
+    if (activeIndex > 0) setActiveIndex((prev) => prev - 1);
+  };
 
   return (
     <div className="deck-container">
@@ -64,9 +72,9 @@ const CardDeck = ({ cardsData, activeIndex, handleNext, handlePrev }) => {
                 <div className="card-links-container">
                   {card.links.map((linkItem, idx) => (
                     <a 
-                      key={idx} 
+                      key={idx}
                       href={linkItem.url} 
-                      className="card-link" 
+                      className="card-link"
                       rel="noopener noreferrer"
                     >
                       {linkItem.text}

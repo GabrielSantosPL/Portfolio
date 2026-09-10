@@ -8,13 +8,6 @@ const Card_Image = ({ data }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   // Funções de avançar e voltar
-  const handleNext = () => {
-    if (activeIndex < data.length - 1) setActiveIndex((prev) => prev + 1);
-  };
-
-  const handlePrev = () => {
-    if (activeIndex > 0) setActiveIndex((prev) => prev - 1);
-  };
 
   // Garante que o componente não quebre se não houver dados
   if (!data || data.length === 0) return <div>Sem dados de portfólio.</div>;
@@ -29,9 +22,8 @@ const Card_Image = ({ data }) => {
       <div className="left-panel">
         <CardDeck 
           cardsData={data} 
-          activeIndex={activeIndex} 
-          handleNext={handleNext} 
-          handlePrev={handlePrev} 
+          activeIndex={activeIndex}
+          setActiveIndex={setActiveIndex}
         />
       </div>
 

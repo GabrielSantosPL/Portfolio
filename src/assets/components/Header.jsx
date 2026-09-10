@@ -5,7 +5,7 @@ import { useLocation } from 'react-router';
 export default function Header(){
 
     const [theme, setTheme] = useState(localStorage.getItem("theme"));
-    const location = useLocation().pathname.substring(0).replace(/\//, '');
+    const location = useLocation().pathname.substring(0);
 
   useEffect(
 
@@ -45,7 +45,7 @@ export default function Header(){
     <header className="retro-header">
       {/* Título decorativo à esquerda */}
       <div className="header-brand">
-        <span className="brand-title">C:\{location}</span>
+        <span className="brand-title">C:{location}</span>
       </div>
 
       {/* Botões à direita */}

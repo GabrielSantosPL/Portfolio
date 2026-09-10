@@ -24,6 +24,14 @@ export default function Home(){
             text: "Para além do curso de Desenvolvimento de Software que presto na Fatec, tenho também cursos complementares que ocasionalmente participo, caso esteja interessado(a) acesse o link abaixo: ",
             links: [{url: "/Form_Acad",
             text: "Cursos e Certificados"}]
+        },
+        {
+
+            id: 4,
+            title: "Reflexões de aulas",
+            text: "Uma seção dedicada para escrever minhas reflexões sobre o conteúdo e o andamentos das aulas",
+            links: [{url: "/Refl/Gap", text: "Gestão Ágil de projetos"}, {url: "/Refl/IHC", text: "Interação Humano-Computador"}, {url: "/Refl/TP2", text: "Técnicas de programação II"}]
+
         }
     ]
 
