@@ -5,9 +5,7 @@
   align-items: center; /* Alinha ambos perfeitamente no eixo vertical */
   gap: 40px; /* Espaço de respiro entre a janela de imagem e o deck */
   width: 100%;
-  min-height: 100vh;
   box-sizing: border-box;
-  padding: 20px;
 }
 
 .portfolio-dyspay-layout .left-panel, .portfolio-dyspay-layout .right-panel {

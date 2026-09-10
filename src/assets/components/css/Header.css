@@ -1,0 +1,51 @@
+/* --- CONTAINER DO HEADER --- */
+.retro-header {
+  display: flex;
+  justify-content: space-between; /* Separa o título dos botões */
+  align-items: center;
+  background-color: var(--alt-color);
+  border: 3px solid var(--main-color);
+  box-shadow: 3px 3px 10px var(--main-color); /* Mesma sombra dura das janelas */
+  padding: 16px 24px;
+  
+  /* Margem para desgrudar o header do topo e do restante do conteúdo */
+  margin: 20px auto 40px auto; 
+  width: 90%; /* Limita a largura para alinhar com os cards na tela */
+  max-width: 1200px;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* --- TÍTULO DECORATIVO --- */
+.header-brand .brand-title {
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--main-color);
+}
+
+/* --- ÁREA DOS BOTÕES --- */
+.header-actions {
+  display: flex;
+  gap: 16px; /* Espaço entre o botão Home e o de Tema */
+}
+
+/* --- ESTILO DOS BOTÕES DO HEADER --- */
+.header-btn {
+  background-color: var(--main-color);
+  color: var(--alt-color);
+  padding: 8px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  border: 2px solid var(--main-color);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+}
+
+/* Efeito idêntico ao dos cards: inverte as cores ao passar o mouse */
+.header-btn:hover {
+  background-color: var(--alt-color);
+  color: var(--main-color);
+}

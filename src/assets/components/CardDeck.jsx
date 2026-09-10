@@ -67,7 +67,6 @@ const CardDeck = ({ cardsData, activeIndex, handleNext, handlePrev }) => {
                       key={idx} 
                       href={linkItem.url} 
                       className="card-link" 
-                      target="_blank" 
                       rel="noopener noreferrer"
                     >
                       {linkItem.text}

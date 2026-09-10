@@ -4,7 +4,7 @@
   height: 360px; 
   background-color: var(--alt-color);
   border: 3px solid var(--main-color);
-  box-shadow: 8px 8px 0px var(--main-color);
+  box-shadow: 3px 3px 10px var(--main-color);
   display: flex;
   flex-direction: column;
   box-sizing: border-box; /* Garante que padding e bordas não estourem o tamanho */

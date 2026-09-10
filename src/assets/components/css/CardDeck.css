@@ -153,22 +153,6 @@
   color: var(--main-color);
 }
 
-/* --- ÁREAS DE CLIQUE PARA INTERAÇÃO --- */
-.click-areas {
-  position: absolute;
-  top: 40px; /* Começa abaixo do cabeçalho da janela */
-  left: 0;
-  width: 100%;
-  height: calc(100% - 40px);
-  display: flex;
-  z-index: 10;
-}
-
-.click-left, .click-right {
-  flex: 1;
-  cursor: pointer;
-}
-
 /* Um leve feedback visual ao passar o mouse indicando qual lado está sendo focado */
 .click-left:hover {
   background: linear-gradient(to right, rgba(0,0,0,0.1), transparent);
