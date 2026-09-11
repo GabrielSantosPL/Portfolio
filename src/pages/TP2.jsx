@@ -14,7 +14,7 @@ export default function TP2(){
 
                   {id: 5, title: "03/09 - Prova POO", text:"Foi aplicada a primeira prova avaliativa de TP2, tendo como conteudo os principais conceitos de POO e padrões de projetos."},
 
-                  {id: 6, title: "10/09 - Apresentação do portfólio e entrega do escopo do PI", text: "Aula dedicada à construção do portfolio digital junto à entrega do escopo do projeto integrador."}
+                  {id: 6, title: "10/09 - Apresentação do portfólio e entrega do escopo do PI", text: "Aula dedicada à construção do portfolio digital junto à entrega do escopo do projeto integrador.", links:[{url: "https://docs.google.com/document/d/1gjzrWbfhHb4Kw2dksPxOKZ_Zj_7qxKHsK4705JF1RLI/", text: "Escopo PI"}]}
     ]
 
     return(
